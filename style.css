@@ -91,7 +91,7 @@ h3{
 }
 p{
     font-family: cursive;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 /* Work Area */
@@ -107,6 +107,9 @@ h2{
 }
 .work p{
     margin: 0%;
-    font-size: 12px;
+    font-size: 14px;
     font-family: cursive;
 }
+
+/* Qualificatio area */
+.qualification
