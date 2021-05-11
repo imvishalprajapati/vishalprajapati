@@ -97,13 +97,14 @@ p{
 /* Work Area */
 
 .work{
-    margin:0;
+    margin:5px;
     width: 200px;
     height: auto;
 }
 h2{
-    font-size: 16px;
+    font-size: 20px;
     color: #8310e8;
+    border-bottom: 1px solid;
 }
 .work p{
     margin: 0%;
@@ -112,4 +113,35 @@ h2{
 }
 
 /* Qualificatio area */
-.qualification
+.dc{
+    margin: 2px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 200px;
+    height:auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid transparent;
+    box-shadow: 10px 10px 2px solid #47454e;
+}
+h2{
+    font-size: 20px;
+    color: #8310e8;
+    border-bottom: 1px solid;
+}
+p{
+    margin: 0%;
+    font-size: 14px;
+    font-family: cursive;
+}
+b{
+    border-bottom: 1px solid #8310e8;
+}
+li{
+    font-family: cursive;
+    font-size: 12px;
+    border-bottom:1px solid #02a1a1;
+
+}
