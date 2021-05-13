@@ -12,7 +12,7 @@ body{
     flex-wrap: wrap;
     position: relative;
     padding: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: sans-serif;
 }
 .header img{
     width: 40px;
@@ -90,8 +90,8 @@ h3{
     color:#8310e8;
 }
 p{
-    font-family: cursive;
-    font-size: 14px;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 15px;
 }
 
 /* Work Area */
@@ -108,8 +108,8 @@ h2{
 }
 .work p{
     margin: 0%;
-    font-size: 14px;
-    font-family: cursive;
+    font-size: 15px;
+    font-family: 'Cuprum', sans-serif;
 }
 
 /* Qualificatio area */
@@ -133,17 +133,75 @@ h2{
 }
 p{
     margin: 0%;
-    font-size: 14px;
-    font-family: cursive;
+    font-size: 15px;
+    font-family: 'Cuprum', sans-serif;
 }
 b{
     border-bottom: 1px solid #8310e8;
 }
 li{
-    font-family: cursive;
-    font-size: 12px;
+    padding: 5px;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 15px;
     border-bottom:1px solid #02a1a1;
 
 }
 
 /* contact me section */
+.con{
+    width: auto;
+    height:auto;
+    font-size:16px ;
+    font-family: 'Cuprum', sans-serif;
+}
+.con p{
+    padding: 5px;
+}
+#fb i,a{
+    padding: 3px;
+    text-shadow:0.5px,0.5px#47454e;
+    color: blue;
+    
+}
+
+#twitter i,a{
+    padding: 3px;
+    color: #02a1a1;
+    text-shadow: 0.5px 0.5px  #47454e;
+}
+#in i,a{
+    color: #2102a1;
+    padding: 3px;
+    text-shadow: 0.5px 0.5px  #47454e;
+}
+#insta i,a{
+    color: #f723da;
+    padding: 3px;
+    text-shadow: 0.5px 0.5px  #47454e;
+}
+
+
+/* footer area */
+.footer{
+    background-color: #47454e;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 0%;
+}
+.footer p{
+    padding: 5px;
+    font-size: 13px;
+    font-family: 'Cuprum', sans-serif;
+}
+.footer p a{
+    color: aliceblue;
+    padding: 2px;
+    text-decoration: none;
+}
+.footer p a:hover{
+    border-bottom: 0.2px solid #f723da;
+}
