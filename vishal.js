@@ -1,19 +1,37 @@
-function great(){
-    let a=new Date();
-    let b=a.getHours();
-    if(b>=03 && b<=12)
+//my tools area
+function mytools(){
+    var a = document.getElementById('km').value;
+    var b = Math.round(a*0.621371);
+    if(a=="" || a<=0)
     {
-        document.getElementById("greating").innerHTML = 'Good Morning';
-
-    }
-   else if(b>=12 && b<=16){
-        document.getElementById("greating").innerHTML = 'Goog Afternoon';
-
-    }
-    else if(b>=16 && b<=20){
-        document.getElementById("greating").innerHTML ='Good Evening' ;
+        alert("Please enter a Valid Value")
     }
     else{
-        document.getElementById("greating").innerHTML ='Good Night';
+    document.getElementById('miles').innerHTML=b+ ' Miles';
     }
+    mytools();
 }
+
+
+// greating  area
+function whishes(){
+    var din=new Date();
+    var samay=din.getHours();
+    document.getElementById('wish').innerHTML=samay;
+    if(samay>1 && samay<=11)
+        {
+            document.getElementById('wish').innerHTML='good morning';
+        }
+    else if(samay>=12 && samay<17)
+        {
+            document.getElementById('wish').innerHTML='Good Afternoon';
+        }
+    else if(samay>=17 && samay<=21)
+        {
+            document.getElementById('wish').innerHTML='Good evening';
+        }
+    else{
+            document.getElementById('wish').innerHTML='Good Night';
+        }
+        whishes();
+    }
