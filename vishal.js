@@ -14,24 +14,27 @@ function mytools(){
 
 
 // greating  area
-function whishes(){
+function whishes()
+{
     var din=new Date();
     var samay=din.getHours();
-    document.getElementById('wish').innerHTML=samay;
-    if(samay>1 && samay<=11)
+    var greet;
+    if(samay<12)
         {
-            document.getElementById('wish').innerHTML='good morning';
+            greet="Good morning";
         }
     else if(samay>=12 && samay<17)
         {
-            document.getElementById('wish').innerHTML='Good Afternoon';
+            greet="Good afternoon";
         }
-    else if(samay>=17 && samay<=21)
+    else if(samay>=17 && samay<=20)
         {
-            document.getElementById('wish').innerHTML='Good evening';
+            greet="Good Evening";
         }
     else{
-            document.getElementById('wish').innerHTML='Good Night';
+            greet="Good Night";
         }
-        whishes();
-    }
+    document.getElementById('wish').innerHTML =
+        '<b>' + greet + '</b> and welcome to Encodedna.com!';
+    whishes();
+}
