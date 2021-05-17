@@ -28,3 +28,4 @@ else if (hrs >= 17 && hrs <= 24)
 
 document.getElementById('wish').innerHTML =
     '<b>' + greet + '</b> and welcome to Encodedna.com!';
+    
