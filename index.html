@@ -55,13 +55,13 @@
             <p><b>Certifications</b></p>
             <div class="certificates">
                 <div class="slide">
-                <img src="js-from-greatLearning.jpg" alt="js">
+                <img src="jsGreatlearning.jpg" alt="gl">
                 </div>
                 <div class="slide">
-                    <img src="js-from-greatLearning.jpg" alt="js">
+                    <img src="htmlcssjsudemy.jpg" alt="udemy">
                     </div>
                     <div class="slide">
-                        <img src="js-from-greatLearning.jpg" alt="js">
+                        <img src="jsGreatlearning.jpg" alt="gl">
                         </div>
             </div>
             </div>
@@ -113,22 +113,19 @@
 
 </script> 
 <script>
-    var slideIndex = 1;
-showSlides(slideIndex);
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-function showSlides(n) {
+  var slideIndex = 0;
+showSlides();
+
+function showSlides() {
   var i;
   var slides = document.getElementsByClassName("slide");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) 
-  {
-      slides[i].style.display = "none";
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 </script>
 </html>
