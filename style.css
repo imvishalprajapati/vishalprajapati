@@ -81,7 +81,7 @@ a:hover{
     align-items: center;
     text-align: center;
 }*/
- img{
+ .about img{
     width: 170px;
     height: 170px;
     border-radius: 50%;
@@ -114,13 +114,14 @@ h2{
     font-family: 'Cuprum', sans-serif;
 }
 
-/* Qualificatio area */
+/*Qualificatio area */
 .dc{
     margin: 2px;
     display: flex;
     position: relative;
     flex-wrap: wrap;
     width: 200px;
+    max-width: 500px;
     height:auto;
     justify-content: center;
     align-items: center;
@@ -128,25 +129,35 @@ h2{
     border: 1px solid transparent;
     box-shadow: 10px 10px 2px solid #47454e;
 }
-h2{
+.dc h2{
     font-size: 20px;
     color: #8310e8;
     border-bottom: 1px solid;
 }
-p{
+ p{
     margin: 0%;
     font-size: 15px;
     font-family: 'Cuprum', sans-serif;
 }
-b{
+.dc b{
     border-bottom: 1px solid #8310e8;
 }
-li{
-    padding: 5px;
-    font-family: 'Cuprum', sans-serif;
-    font-size: 15px;
-    border-bottom:1px solid #02a1a1;
-
+/* Certificate Area*/
+.certificates{
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.slide{
+    display: none;
+}
+.slide img{
+    width: 400px;
+    height: 310px;
+    border-radius: 5px;
 }
 
 /* contact me section */
@@ -207,13 +218,6 @@ li{
 .footer p a:hover{
     border-bottom: 0.2px solid #f723da;
 }
-
-/* greating area code */
-#greating p{
-    color: teal;
-}
-
-
 
 /* my tools area code */
 .toolbox{

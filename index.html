@@ -53,16 +53,18 @@
             <h2>My Qualifications</h2>
             <P><b>Degree</b><br> Bachelor of Science in Information Technology</p>
             <p><b>Certifications</b></p>
-                <li type="i">Certification in JavaScript from 
-                    Great Learning. </li>
-                <li type="i">
-                    Certification in HTML5,CSS3 from Udemy.
-                </li>
-                <li type="i">
-                    Certification in Jquery From Udemy.
-                </li>
-                </p>
-        </div>
+            <div class="certificates">
+                <div class="slide">
+                <img src="js-from-greatLearning.jpg" alt="js">
+                </div>
+                <div class="slide">
+                    <img src="js-from-greatLearning.jpg" alt="js">
+                    </div>
+                    <div class="slide">
+                        <img src="js-from-greatLearning.jpg" alt="js">
+                        </div>
+            </div>
+            </div>
     </div>
     <div class="section" id="contact">
         <div class="con" id="social">
@@ -92,7 +94,7 @@
         
 </body>
 <script>
-  var myDate = new Date();
+    var myDate = new Date();
     var hrs = myDate.getHours();
 
     var greet;
@@ -108,5 +110,25 @@
     }
     document.getElementById('wish').innerHTML =
          greet + ' and welcome to my Portfolio';
+
 </script> 
+<script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) 
+  {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
 </html>
