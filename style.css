@@ -1,6 +1,8 @@
 body{
     margin: 0%;
     padding: 0%;
+    font-family: 'Cuprum', sans-serif;
+
 }
 
 .header{
@@ -86,9 +88,15 @@ a:hover{
     height: 170px;
     border-radius: 50%;
 }
-h3{
+.about h3{
     margin: 0%;
-    color:#8310e8;
+    color:#2102a1;
+    font-family: 'Cuprum', sans-serif;
+}
+.about h4{
+    margin: 0%;
+    color: #000202;
+    font-family: 'Cuprum', sans-serif;
 }
 p{
     font-family: 'Cuprum', sans-serif;
@@ -154,7 +162,8 @@ h2{
 .slide{
     display: none;
     border: 2px solid #2102a1;
-    padding: 2px;
+    padding: 3px;
+    border-radius:12px;
 }
 .slide img{
     width: 430px;

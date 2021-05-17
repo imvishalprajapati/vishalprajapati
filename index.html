@@ -28,7 +28,7 @@
             <img src="vishal.jpg" alt="Profile" > <br/><br>
             <h3> Hello ! </h3>
             <p id="wish"></p>
-            <h3><i style="color: #07dae6;">I'm Vishal Prajapati </i></h3><br>
+            <h4>I'm Vishal Prajapati</h4><br>
             <p>I'm a Web Developer based in Mumbai,India.
                 My passion toward web development allows me
                 to do this fabulous work.
@@ -96,20 +96,18 @@
 <script>
     var myDate = new Date();
     var hrs = myDate.getHours();
-
     var greet;
-
     if (hrs < 12)
         greet = 'Good Morning';
     else if (hrs >= 12 && hrs < 17)
         greet = 'Good Afternoon';
-    else if (hrs >= 17 && hrs <= 24)
+    else if (hrs >= 17 && hrs <21)
         greet = 'Good Evening';
     else{
-        greet= 'Good Night'
+        greet= 'Have a Good Night'
     }
     document.getElementById('wish').innerHTML =
-         greet + ' and welcome to my Portfolio';
+         greet + ' and welcome to my Portfolio site';
 
 </script> 
 <script>
@@ -125,7 +123,7 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 2900); // Change image every 2 seconds
 }
 </script>
 </html>
