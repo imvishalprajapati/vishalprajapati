@@ -216,19 +216,31 @@ h2{
     padding: 5px;
     margin-right: 0%;
 }
-.footer p{
+.credit p{
     padding: 5px;
     font-size: 13px;
     font-family: 'Cuprum', sans-serif;
 }
-.footer p a{
+.credit p a{
     color: aliceblue;
     padding: 2px;
     text-decoration: none;
 }
-.footer p a:hover{
+.credit p a:hover{
     border-bottom: 0.2px solid #f723da;
 }
+/* tool links Area */
+.tools{
+    flex-direction: row-reverse;
+}
+.tools a{
+    text-decoration: none;
+    padding: 2px;
+    font-size: 11px;
+    font-family: 'Cuprum', sans-serif;
+    color: #02a1a1;
+}
+
 
 /* my tools area code */
 .toolbox{
