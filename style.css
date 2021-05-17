@@ -152,7 +152,7 @@ h2{
 }
 /* Certificate Area*/
 .certificates{
-    max-width: 500px;
+    max-width: 300px;
     height: auto;
     display: flex;
     position: relative;
@@ -166,8 +166,8 @@ h2{
     border-radius:12px;
 }
 .slide img{
-    width: 430px;
-    height: 290px;
+    width: 300px;
+    height: 200px;
     border-radius: 5px;
 }
 
