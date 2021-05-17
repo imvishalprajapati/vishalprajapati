@@ -11,21 +11,19 @@ function mytools(){
     }
     mytools();
 }
-
-
-// greating  area
 var myDate = new Date();
-var hrs = myDate.getHours();
+    var hrs = myDate.getHours();
 
-var greet;
+    var greet;
 
-if (hrs < 12)
-    greet = 'Good Morning';
-else if (hrs >= 12 && hrs <= 17)
-    greet = 'Good Afternoon';
-else if (hrs >= 17 && hrs <= 24)
-    greet = 'Good Evening';
-
-document.getElementById('wish').innerHTML =
-    '<b>' + greet + '</b> and welcome to Encodedna.com!';
-    
+    if (hrs < 12)
+        greet = 'Good Morning';
+    else if (hrs >= 12 && hrs < 17)
+        greet = 'Good Afternoon';
+    else if (hrs >= 17 && hrs <= 24)
+        greet = 'Good Evening';
+    else{
+        greet= 'Good Night'
+    }
+    document.getElementById('wish').innerHTML =
+         greet + ' and welcome to my Portfolio';
