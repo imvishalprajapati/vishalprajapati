@@ -57,37 +57,36 @@
                 <div class="slide">
                 <img src="jsGreatlearning.jpg" alt="gl">
                 </div>
-                <div class="slide">
+                    <div class="slide">
                     <img src="htmlcssjsudemy.jpg" alt="udemy">
                     </div>
-                    <div class="slide">
+                        <div class="slide">
                         <img src="youaccelhcj.jpg" alt="gl">
                         </div>
+                        <a class="pre" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next"onclick="plusSlides(1)">&#10095;</a>
             </div>
-            </div>
-    </div>
-    <div class="section" id="contact">
-        <div class="con" id="social">
-            <h2>Reach out to me through social handles</h2>
-            <p id="fb"><a href="https:/www.facebook.com/imvishalprajapati">
-                <i class="fab fa-facebook">&nbsp| imvishalprajapati</i>
-            </a></p>
-            <p id="twitter"><a href="https://www.twitter.com/imvishalpra">
-                <i class="fab fa-twitter">&nbsp| imvishalpra</i>
-            </a></p>
-            <p id="in"><a href="https://www.linkedin.com/in/imvishalprajapati">
-                <i class="fab fa-linkedin-in">&nbsp| imvishalprajapati</i>
-            </a></p>
-            <p id="insta"><a href="https://www.instagram.com/imvishalprajapati">
-                <i class="fab fa-instagram">
-                &nbsp| imvishalprajapati
-            </i>
-            
-            </a></p> 
-
         </div>
     </div>
+    <div class="section" id="contact">
+        
+    </div>
     <div class="footer">
+        <div class="con" id="social">
+            <a href="https:/www.facebook.com/imvishalprajapati">
+                <i class="fab fa-facebook" id="fb"></i>
+            </a>
+            <a href="https://www.twitter.com/imvishalpra">
+                <i class="fab fa-twitter" id="tw"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/imvishalprajapati">
+                <i class="fab fa-linkedin-in" id="in"></i>
+            </a>
+           <a href="https://www.instagram.com/imvishalprajapati">
+                <i class="fab fa-instagram" id="insta"> </i></a>
+            <a href="https://www.github.com/imvishalprajapati">
+                <i class="fab fa-github" id="git"></i></a> 
+        </div>
         <div class="credit">
         <p>Developed by <a href="https://www.github.com/imvishalprajapati">Vishal Prajapati</a></p>
         </div>
@@ -116,7 +115,7 @@
          greet + ' and welcome to my Portfolio site';
 
 </script> 
-<script>
+<!--<script>
   var slideIndex = 0;
 showSlides();
 
@@ -131,5 +130,30 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
+</script> -->
+
+<script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
 </script>
 </html>

@@ -170,40 +170,79 @@ h2{
     height: auto;
     border-radius: 5px;
 }
+.pre{
+    cursor: pointer;
+    position: absolute;
+    float: left;
+    top: 50%;
+    right: 100%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #2102a1;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+.next{
+    cursor: pointer;
+    position: absolute;
+    float: left;
+    top: 50%;
+    left: 100%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #2102a1;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+.certificates a:hover{
+    border-bottom: 1px solid transparent;
 
-/* contact me section */
+}
+
+/* footer social section */
 .con{
     width: auto;
     height:auto;
     font-size:16px ;
     font-family: 'Cuprum', sans-serif;
 }
-.con p{
+.con a,i{
+    font-size: 12px;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 3px;
+}
+i{
     padding: 5px;
+    border-radius: 50%;
+    border: 0.5px solid transparent;
 }
-#fb i,a{
-    padding: 3px;
-    text-shadow:0.5px,0.5px#47454e;
-    color: blue;
-    
+#fb{
+    background-color: #2102a1  ;
 }
-
-#twitter i,a{
-    padding: 3px;
-    color: #02a1a1;
-    text-shadow: 0.5px 0.5px  #47454e;
+#tw{
+    background-color: #02a1a1  ;
 }
-#in i,a{
-    color: #2102a1;
-    padding: 3px;
-    text-shadow: 0.5px 0.5px  #47454e;
+#in{
+    background-color: #0c63c7  ;
 }
-#insta i,a{
-    color: #f723da;
-    padding: 3px;
-    text-shadow: 0.5px 0.5px  #47454e;
+#insta{
+    background-color: #f723da ;
 }
-
+#git{
+    background-color: black  ;
+}
+.con a:hover{
+    border-color: transparent;
+}
 
 /* footer area */
 .footer{
